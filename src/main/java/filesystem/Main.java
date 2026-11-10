@@ -2,7 +2,6 @@ package filesystem;
 
 public class Main {
     public static void main(String[] args) {
-        // Демонстрационная иерархия с именованием depthX
         DirectoryNode depth0 = new DirectoryNode("depth0");
         DirectoryNode depth1A = new DirectoryNode("depth1A");
         DirectoryNode depth1B = new DirectoryNode("depth1B");

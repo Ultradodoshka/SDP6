@@ -34,13 +34,13 @@ mvn compile exec:java -Dexec.mainClass="filesystem.Main"
 ```text
 filesystem/
 ├── FileSystemElement (Interface: getName, getParent, setParent, accept)
-│   ├── FileNode (Leaf: name, non-negative size)
-│   └── DirectoryNode (Composite: unmodifiable children collection, cycle-safe)
+├── FileNode (Leaf: name, non-negative size)
+├── DirectoryNode (Composite: unmodifiable children collection, cycle-safe)
 │
 ├── FileSystemVisitor (Interface: visit(FileNode), visit(DirectoryNode))
-│   ├── TotalSizeVisitor (R3: cumulative file size)
-│   ├── SearchVisitor (R4: filter by name & min size, sorted root-relative paths)
-│   └── StatisticsVisitor (R5: file count, dir count, max depth where root=0)
+├── TotalSizeVisitor (R3: cumulative file size)
+├── SearchVisitor (R4: filter by name & min size, sorted root-relative paths)
+├── StatisticsVisitor (R5: file count, dir count, max depth where root=0)
 │
 └── Main (Executable demonstration)
 ```
